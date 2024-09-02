@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enigma Machine</title>
+</head>
+<body>
+    <div id="input">Plaintext: </div>
+    <div id="output">Ciphertext: </div>
+    <div id="titles">
+        <div class="title">Reflector</div>
+        <div class="title">Rotor IV</div>
+        <div class="title">Rotor II</div>
+        <div class="title">Rotor I</div>
+        <div class="title">Plugboard</div>
+        <div class="title">Key/Lamp Board</div>
+    </div>
+    <div id="enigma">
+        <div id="rectangles-container">
+            <div class="rectangle" id="reflector">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rectangle" id="third">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rectangle" id="second">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rectangle" id="first">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rectangle" id="plugboard">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rectangle" id="keylamp"></div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
